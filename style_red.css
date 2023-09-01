@@ -1,0 +1,1065 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Nunito:wght@700&family=Oxygen:wght@500&display=swap');
+
+.tema-color{
+    position: fixed;
+    right: 0;
+    top: 300px;
+    z-index: 99;
+    background: transparent;
+}
+
+.cont-colores{
+    width: 80px;
+    padding: 30px 0px;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    position: absolute;
+    right: -190px;
+    border-radius: 20px;
+    top: -64px;
+    transition: 1s ease-in-out;
+
+
+}
+.cont-colores.active{
+    right: 0;
+}
+
+
+
+.cont-colores button{
+    width: 30px;
+    height: 30px;
+    color: transparent;
+    border-radius: 40px;
+    display: block;
+    margin: 10px auto;
+    transition: 1s;
+}
+.cont-colores button:hover{
+    transform: scale(1.3);
+}
+.cont-colores button:nth-child(1){
+    background: red;
+}
+.cont-colores button:nth-child(2){
+    background: black;
+}
+.cont-colores button:nth-child(3){
+    background: red;
+}
+
+.open-panel{
+    background: white;
+    color: rgb(0, 0, 0);
+    padding: 30px 50px;
+    transform: rotate(-90deg);
+    position: relative;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    right: -60px;
+}
+
+.open-panel.active{
+    right: 43px;
+    transition: 1s ease-in-out;
+}
+
+section{
+    height: 100%;
+    overflow: hidden;
+}
+
+
+#logo{
+    margin-top: 20px;
+}
+
+#logo img{
+    height: 100px;
+    width: 100px;
+}
+
+
+
+#barra ul{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-right: 80px;
+}
+
+#barra li{
+    list-style: none;
+    margin-right: 20px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+#barra li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    
+}
+
+
+#barra li:hover{
+    border-bottom: 4px solid #B3ECF2;
+    
+}
+
+#buscador{
+    margin-top: 30px;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+
+#buscador input{
+    border-radius: 10px;
+    padding: 10px 5px 10px 12px;
+    height: 35px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 1px black;
+    outline: none;
+}
+
+
+#buscador i{
+    font-size: 25px;
+    margin: 5px 5px 5px 15px;
+}
+#hero{
+    margin-top: 60px;
+    align-content: space-between;
+}
+
+#hero h1{
+    margin-bottom: 30px;
+    text-shadow: 3px 3px 4px red;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 70px;
+}
+
+#hero p{
+    margin-bottom: 70px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#hero a{
+    text-decoration: none;
+    color: black;
+    background-color: #B3ECF2;
+    padding: 12px 12px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-family: 'Oxygen', sans-serif;
+    transition: 0.5s ease-in-out;
+}
+
+#hero a:nth-of-type(2){
+    margin-left: 20px;
+    font-family: 'Oxygen', sans-serif;
+    
+}
+
+#hero p:nth-of-type(2){
+    margin-top: 35px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 20px;
+
+}
+
+#hero i{
+    font-size: 25px;
+}
+.flecha{
+    font-size: 25px;
+    transform: rotate(40deg);
+    position: relative;
+    top: 2px;
+}
+#hero i:nth-child(1){
+    margin: 0 10px 0 10px;
+}
+#hero i:nth-child(2){
+    margin: 0 10px 0 0;
+}
+
+
+#hero p:nth-of-type(2) img{
+    margin-left: 10px;
+    height: 30px;
+
+}
+#hero a img{
+    height: 30px;
+}
+
+#hero h3{
+    position: relative;
+    bottom:168px;
+    font-family: 'Oxygen', sans-serif;
+    right: 82px;
+    color: #02B7CA;
+    transform: rotate(-40deg);
+}
+
+#hero a:hover{
+    background-color: white;
+
+}
+
+
+
+
+#persona{
+    background-color: red;
+    width: 400px;
+    position: relative;
+    bottom: 200px;
+    height: 350px;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    transform: rotate(90deg);
+
+}
+
+
+#persona img{
+    position: absolute;
+    height: 472px;
+    left: 51px;
+    width: 335px;
+    top: -59px;
+    transform: rotate(-90deg);
+}
+
+#foto p{
+    position: relative;
+    left: 320px;
+    top: 50px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.punto{
+    height: 14px;
+    width: 14px;
+    position: relative;
+    z-index: 1;
+}
+
+.punto:nth-child(2){
+    bottom: 65px;
+    left: 25px;
+}
+.punto:nth-child(3){
+    bottom: 90px;
+    left: 20px;
+}
+.punto:nth-child(4){
+    bottom: 55px;
+    left: 5px;
+}
+.punto:nth-child(5){
+    bottom:  45px;
+    right: 45px;
+}
+.punto:nth-child(6){
+    bottom:  15px;
+    right: 65px;
+}
+.punto:nth-child(7){
+    bottom:  25px;
+    right: 55px;
+}
+.punto:nth-child(8){
+    top: 15px;
+    right: 75px;
+}
+.punto:nth-child(9){
+    bottom:  70px;
+    right: 60px;
+}
+.punto:nth-child(10){
+    bottom:  95px;
+    right: 65px;
+}
+.punto:nth-child(11){
+    top:25px;
+    right: 150px;
+}
+.punto:nth-child(12){
+    bottom: 40px;
+    right: 110px;
+}
+
+.vector{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    z-index: 1;
+    top: 150px;
+    left: 100px;
+    transform: rotate(10DEG);
+}
+
+
+main{
+    background-color: red;
+}
+#servicios{
+    height: 70vh;
+    margin-top: 60px;
+
+}
+
+#servicios h2{
+    margin-bottom: 50px;
+    font-size: 70px;
+    text-shadow: 3px 3px 4px #B3ECF2;
+    
+}
+
+
+
+#servicios p{
+    margin-bottom: 50px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 18px;
+    
+}
+/* -----------------seccion de los botones que se despliegan */
+.desp span:nth-of-type(1){
+    color: #F7DF1E;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+.desp span:nth-of-type(2){
+    color: #E76F00;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+.desp span:nth-of-type(3){
+    color: #3776AB;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+.desp1 span:nth-of-type(1){
+    color: #E34F26;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+.desp1 span:nth-of-type(2){
+    color: #1572B6;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+.desp1 span:nth-of-type(3){
+    color: #7952B3;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+.desp2 span:nth-of-type(1){
+    color: #4479A1;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+.desp2 span:nth-of-type(2){
+    color: #47A248;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+
+.desp p{
+    font-family: 'Oxygen', sans-serif;
+}
+#ser i{
+    font-size: 40px;
+    margin-right: 25px;
+}
+#servicios img{
+    height: 200px; 
+    width: 200px;
+    margin-left: 50px;
+}
+
+#servicios h3{
+    margin-bottom: 30px;
+    
+}
+
+#ser{
+    margin-top: 80px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    border-top: 4px solid black;
+}
+
+.pad-ser{
+    padding-bottom: 45px;
+}
+
+#ser p{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#ser img{
+    margin-left: 25px;
+    top: 20px;
+    height: 50px;
+    width: 50px;
+}
+#ser h3{
+    margin-left: 25px;
+}
+.imagenes_ser{
+    position: relative;
+    top: 60px;
+    left: 30px;
+}
+.imagenes_ser1{
+    position: relative;
+    top: 40px;
+    left: 80px;
+}
+
+
+
+
+#ser a{
+    background-color: #B3ECF2;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+button img{
+    height: 30px;
+    width: 30px;
+}
+#boton button{
+    padding: 0;
+    background-color: #B3ECF2;
+    height: 50px;
+    position: relative;
+    top: 140px;
+    width: 60px;
+    left: 80px;
+    border-radius: 50%;
+
+}
+
+#boton img{
+    margin: 0;
+    top: 0;
+}
+#boton textarea{
+    border: none;
+    resize: none;
+}
+#boton ul{
+    padding: 0;
+}
+#boton li textarea{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Oxyne';
+    background-color: #ffffff;
+}
+
+/* --------------------------Sección Experiencia------------ */
+
+#experiencia{
+    background-color: white;
+    padding-top: 70px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+#habilidades h2{
+    margin-bottom: 45px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 70px;
+    text-shadow: 3px 4px 4px #CAB600;
+}
+.btn-servicios button{
+    border-radius: 50%;
+    background-color: #B3ECF2;
+    border: none;
+    padding: 15px;
+    transition: 0.5s;
+}
+.btn-servicios button:hover{
+    transform: scale(1.1) rotate(360deg);
+    background-color: #ffffff;
+}
+#text_ex{
+    font-size: 18px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+#img_1{
+    text-align: center;
+    width: 150px;
+}
+
+#img_1 img{
+    height: 60px;
+    width: 60px;
+}
+
+#img_1 p{
+    margin-top: 20px;
+}
+
+#img_ex{
+    margin-top: 70px;
+}
+
+#ex_trabajo h3{
+    padding-top: 20px;
+    border-top: 3px solid black;
+
+}
+
+/* ------------------------Sección de proyectos---------------------- */
+
+
+.bloque p:nth-child(1){
+    position: relative;
+    transform: rotate(-25deg);
+    font-size: 20px;
+    bottom: 240px;
+    font-family: 'Oxygen', sans-serif;
+    right: 55px;
+    color: #0197A7;
+    
+}
+.btn-projectos{
+    position: relative;
+    right: 55px;
+    border: none;
+}
+
+.bloque h2{
+    position: relative;
+    bottom: 190px;
+    text-shadow: 3px 3px 4px #B3ECF2;
+    font-family: 'Nunito';
+    font-size: 70px;
+}
+
+div .bloque:nth-child(1){
+    margin-top: 230px;
+}
+
+div .bloque h3{
+    padding-top: 25px;
+    border-top: 3px solid black;
+}
+
+div .bloque:nth-child(2){
+    margin-top: 200px;
+}
+div .bloque:nth-child(3){
+    margin-top: 80px;
+}
+
+.bloque button{
+    border-radius: 50%;
+    padding: 15px;
+    position: relative;
+    border: none;
+    left: 350px;
+    background-color: #B3ECF2;
+    bottom: 50px;
+}
+.btn-projectos button:hover{
+    background-color: white;
+    transform: scale(1.3);
+    transform: rotate(360deg);
+}
+
+#projectos{
+    margin-bottom: 80px;
+}
+.btn-up{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0 20px 20px 0;
+}
+.btn-up i{
+    color: #000000;
+    font-size: 30px;
+    padding: 6px 10px 6px 10px ;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.btn-up i:hover{
+    transform:translateY(-20px);
+    background-color: #B3ECF2;
+}
+div .bloque img:nth-of-type(2)
+{
+    height: 150px;
+    position: relative;
+    left: 100px;
+    top: 230px;
+    width: 150px;
+    transition: 0.7s;
+}
+div .bloque img:hover:nth-of-type(2)
+{
+    transform: scale(1.3) rotate(360deg);
+}
+/* ------------------Sobre mi-------------------- */
+.imagen_s img{
+    width: 120px;
+}
+
+
+.imagen_s {
+    justify-content: space-around;
+    text-align: center;
+}
+
+.imagen_s p{
+
+    animation: bombillo 4s linear infinite;
+}
+
+@keyframes bombillo{
+    0%{
+        text-shadow: 0px 0px 2px rgb(134, 134, 0);
+    }
+    25%{
+        text-shadow: 0px 0px 2px rgb(187, 187, 0);
+    }
+    50%{
+        text-shadow: 0px 0px 4px #ffe600;
+    }
+    75%{
+        text-shadow: 0px 0px 2px #c0ad00;
+    }
+    100%{
+        text-shadow: 0px 0px 4px rgb(134, 134, 0);
+    }
+}
+
+#sobre{
+    background-color: white;
+}
+#sobre h2{
+    margin-bottom: 45px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 70px;
+    margin-top: 20px;
+    text-shadow: 3px 4px 4px #CAB600;
+}
+
+#sobre p{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+/* -----------------footer---------------- */
+
+#foo{
+    background-color: red;
+}
+
+#footer_cl p{
+    margin: 0 0 0 12px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+}
+#footer_cl i{
+    font-size: 25px;
+}
+#footer_cl {
+    margin: 25px 0 10px 0;
+}
+
+#footer_i i{
+margin-left: 20PX;
+margin-bottom: 20px;
+position: relative;
+left: 70PX;
+}
+
+
+@media screen and (min-width:610px) and (max-width:990px){
+    /* ----------------hero---------------------- */
+    .open-panel{
+        right: -32px;
+        padding: 15px 30px;        
+    }
+    .imagen_s{
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    #barra{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #barra ul{
+        flex-wrap: wrap;
+    }
+    #logo img{
+        margin-bottom: 36px;
+    }
+    #persona{
+        width: 323px;
+        height: 288px;
+    }
+    #persona img{
+        height: 369px;
+        left: 20px;
+        top: -46px;
+        width: 268px;
+    }
+    #foto p{
+        top: 80px;
+        left: 174px;
+    }
+    .vector{
+        left: 75px;
+        top: 123px;
+    }
+    #hero a{
+        font-size: 17px;
+    }
+    #hero h1{
+        font-size: 50px;
+    }
+    #hero h3{
+        bottom: 75px;
+        right: 50px;
+    }
+    .punto:nth-child(2){
+        bottom: 65px;
+        left: 42px;
+
+    }
+    .punto:nth-child(3){
+        bottom: 90px;
+        left: 51px;
+    }
+    .punto:nth-child(4){
+        bottom: 40px;
+        left: -19px;
+    }
+    .punto:nth-child(5){
+        bottom:  45px;
+        right: 0px;
+        display: none;
+    }
+    .punto:nth-child(6){
+        bottom:  25px;
+        right: 51px;
+        
+    }
+    .punto:nth-child(7){
+        bottom:  85px;
+        right: 30px;
+        
+    }
+    .punto:nth-child(8){
+        top: -50px;
+        right: 90px;
+        
+    }
+    .punto:nth-child(9){
+        bottom:  70px;
+        right: 89px;
+        
+    }
+    .punto:nth-child(10){
+        bottom:  95px;
+        display: none;
+        right: 6px;
+    }
+    .punto:nth-child(11){
+        top:25px;
+        right: 100px;
+        display: none;
+    }
+    .punto:nth-child(12){
+        bottom: 40px;
+        right: 50px;
+        display: none;
+    }
+
+    /* --------------------Servicios------------------ */
+
+    #servicios h2{
+        font-size: 50px;
+    }
+
+    #servicios img{
+        margin-left: 0px;
+    }
+
+    /* --------------------Habilidades------------- */
+
+    #habilidades h2{
+        font-size: 50px;
+    }
+
+    /* -------------------projectos-------------------- */
+    .bloque button{
+        left: 206px;
+        bottom: -8px;
+    }
+    .bloque h2{
+        font-size: 50px;
+    }
+    
+    div .bloque img:nth-of-type(2){
+        left: 34px;
+    }
+    .bloque p:nth-child(1){
+        right: 40px;
+        bottom: 200px;
+    }
+
+    /* -------------------------------Footer----------------- */
+    #footer_i i {
+        left: 0px;
+    }
+    #footer_cl p:nth-of-type(1){
+        text-align: center;
+        margin: 0 40px 0 0;
+    }
+}
+/* --------------------------Telefono------------------------ */
+@media screen and (min-width:320px) and (max-width:600px){
+    .open-panel{
+        right: -43px;
+        padding: 3px 30px;        
+    }
+    #logo img{
+        margin-left: 130px;
+    }
+    #barra ul{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+    }
+    #buscador{
+        margin-left: -60px;
+    }
+    #hero h1{
+        font-size: 50px;
+    }
+    #hero p{
+        font-size: 17px;
+    }
+    #hero a{
+        padding: 6px 6px;
+        font-size: 17px;
+    }
+    #hero i{
+        font-size: 20px;
+    }
+    #persona{
+        height: 180px;
+        width: 200px;
+        margin-left: 80px;
+        top: -149px;
+    }
+    #persona img{
+        height: 246px;
+        left: 14px;
+        top: -32px;
+        width: 165px;
+    }
+    #foto p{
+        left: 0;
+        text-align: center;
+        top: -15px;
+    }
+    #foto{
+        position: relative;
+        top: -22px;
+        height: 285px;
+    }
+
+    .punto{
+        height: 12px;
+        width: 12px;
+        position: relative;
+        z-index: 1;
+    }
+    .punto:nth-child(2){
+        bottom: 65px;
+        left: 100px;
+
+    }
+    .punto:nth-child(3){
+        bottom: 90px;
+        left: 100px;
+    }
+    .punto:nth-child(4){
+        bottom: 40px;
+        left: 60px;
+    }
+    .punto:nth-child(5){
+        bottom:  45px;
+        right: 0px;
+        display: none;
+    }
+    .punto:nth-child(6){
+        bottom:  25px;
+        right: -25px;
+        
+    }
+    .punto:nth-child(7){
+        bottom:  85px;
+        right: -20px;
+        
+    }
+    .punto:nth-child(8){
+        top: -50px;
+        right: 10px;
+        
+    }
+    .punto:nth-child(9){
+        bottom:  70px;
+        right: 30px;
+        
+    }
+    .punto:nth-child(10){
+        bottom:  95px;
+        display: none;
+        right: 6px;
+    }
+    .punto:nth-child(11){
+        top:25px;
+        right: 100px;
+        display: none;
+    }
+    .punto:nth-child(12){
+        bottom: 40px;
+        right: 50px;
+        display: none;
+    }
+    .vector{
+        top: 30px;
+        left: 110px;
+        height: 80px;
+        width: 80px;
+    }
+
+    /* ---------------------oferta de servicios--------- */
+    #servicios h2{
+        font-size: 50px;
+    }
+    #servicios p{
+        font-size: 17px;
+    }
+    #servicios img{
+        height:210px;
+        left: 30px;
+        position: relative;
+        width: 220px;
+    }
+    .imagenes_ser{
+        position: relative;
+        top: 60px;
+        left: 30px;
+        margin-right: 80px;
+    }
+    .imagenes_ser1{
+        position: relative;
+        top: 60px;
+        left: 30px;
+        margin-right: 80px;
+    }
+    /* ------------Habilidades---------------- */
+    #habilidades h2{
+        font-size: 50px;
+    }
+    #habilidades p{
+        font-size: 17px;
+    }
+    #img_1{
+        width: 127px;
+        margin-bottom: 30px;
+    }
+    #ex_trabajo h3{
+        font-size: 20px;
+    }
+
+    #projectos h2{
+        font-size: 50px;
+        left: 30px;
+    }
+    .bloque p:nth-child(1){
+        right: 20px;
+    }
+    div .bloque:nth-child(1){
+        margin-top: 230px;
+    }
+    
+    div .bloque h3{
+        padding-top: 25px;
+        border-top: 3px solid black;
+    }
+    
+    div .bloque:nth-child(2){
+        margin-top: 20px;
+    }
+    div .bloque:nth-child(3){
+        margin-top: 20px;
+    }
+    
+    button img{
+        height: 30px;
+        width: 30px;
+    }
+    /* -------------------Sobre mi -------------------*/
+
+    #sobre p{
+        font-size: 17px;
+    }
+
+    .imagen_s img{
+        width: 80px;
+    }
+    /* --------------footer------------- */
+    .d-flex{
+        justify-content: center;
+    }
+    #footer_i i{
+        margin-left: 30PX;
+        margin-bottom: 20px;
+        margin-top: 30px;
+        position: relative;
+        left: 70PX;
+        }
+    #footer_i p{
+        margin-bottom: 20px;
+        position: relative;
+        left: 30PX;
+        }
+        #footer_cl i{
+            font-size: 30px;
+        }
+        .btn-up{
+
+            bottom: 75px;
+
+        }
+}
